@@ -14,7 +14,7 @@ from setup_st import *
 #initialize_session_state()
 
 # Setup Streamlit UI/UX elements
-#set_design()
+set_design()
 sidebar()
 get_user_config()
 clear_button()
