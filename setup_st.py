@@ -34,8 +34,8 @@ def initialize_session_state():
     if 'api_key' not in st.session_state:
         st.session_state['api_key'] = ""
     # Initializes the use index variable to determine if we use index in replies
-    if 'use_index' not in st.session_state:
-        st.session_state['use_index'] = False
+ #   if 'use_index' not in st.session_state:
+  #      st.session_state['use_index'] = False
     
     # Can be used to guide the chatbot through pre-defined stages / steps. 
     # Note: you will need to increment the stage in the main.py file every time a response is sent
@@ -114,10 +114,10 @@ def get_user_config():
     st.sidebar.markdown("<b style='color: darkgreen;'>Enter OpenAI API Key to use chatbot:</b>", unsafe_allow_html=True)
     api_key = st.sidebar.text_input("", type="password", label_visibility="collapsed")  # Hides the entered text for privacy
 
-    # Display a checkbox to include users data so that the chatbot will be able to append information to its responses
-    st.sidebar.markdown("<b style='color: darkgreen;'>Use indexed data for responses:</b>", unsafe_allow_html=True)
-    use_index = st.sidebar.checkbox("", value=st.session_state.get('use_index', False), label_visibility="collapsed")
-    st.sidebar.write(f"Use index state: {st.session_state['use_index']}")
+   # # Display a checkbox to include users data so that the chatbot will be able to append information to its responses
+   # st.sidebar.markdown("<b style='color: darkgreen;'>Use indexed data for responses:</b>", unsafe_allow_html=True)
+  #  use_index = st.sidebar.checkbox("", value=st.session_state.get('use_index', False), label_visibility="collapsed")
+  #  st.sidebar.write(f"Use index state: {st.session_state['use_index']}")
 
     # OPTIONAL: Display button choices for the user to pick a validation mode. My implementation of this function changes the 'rigor' of the idea validation.
     # st.sidebar.markdown("<b style='color: darkgreen;'>Choose a validation mode:</b>", unsafe_allow_html=True)
@@ -128,4 +128,4 @@ def get_user_config():
     st.session_state['model_name'] = model_options[model_name]
     st.session_state['temperature'] = temperature
     st.session_state['api_key'] = api_key
-    st.session_state['use_index'] = use_index
+    # st.session_state['use_index'] = use_index
