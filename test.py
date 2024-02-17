@@ -5,8 +5,8 @@ import time
 import streamlit as st
 
 
-## Importing other files for setup and functionalities
-#from setup_st import *
+# Importing other files for setup and functionalities
+from setup_st import *
 #from helper_functions import *
 #from index_functions import *
 
@@ -14,7 +14,7 @@ import streamlit as st
 #initialize_session_state()
 
 # Setup Streamlit UI/UX elements
-set_design()
+#set_design()
 sidebar()
 get_user_config()
 clear_button()
