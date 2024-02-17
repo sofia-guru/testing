@@ -1,3 +1,4 @@
+pip install openai
 import openai as OpenAI
 import os
 import streamlit as st
