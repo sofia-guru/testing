@@ -12,7 +12,7 @@ def set_design():
         st.image("sample_logo.png", use_column_width=True)
 
     # Adding a title to the Streamlit app, center-aligned
-    st.markdown("<p style='text-align: center; font-size: 30px;'><b>[Sample Generative AI Chatbot]</b></p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; font-size: 30px;'><b>[GPT Guru]</b></p>", unsafe_allow_html=True)
 
 # 2. Function to initialize variables that will hold the state of the app (illustrative list, not complete)
 def initialize_session_state():
